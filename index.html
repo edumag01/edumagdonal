@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Edumagdonal · Comida casera con sabor</title>
+  <meta name="description" content="Edumagdonal: comida casera, fresca y hecha con cariño. Consulta nuestro menú, horarios y haz tu pedido por WhatsApp.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🍔</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#inicio" class="brand">🍔 <span>Edumagdonal</span></a>
+      <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+      <nav class="nav-links">
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#horarios">Horarios</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#" class="btn btn-small js-whatsapp">Pedir ahora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PORTADA -->
+    <section id="inicio" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hecho al momento · Ingredientes frescos</p>
+          <h1>Comida casera que sabe a <em>hogar</em></h1>
+          <p class="lead">Hamburguesas, platos del día y postres preparados con cariño. Pide para llevar o a domicilio en un par de clics.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn js-whatsapp">📲 Pedir por WhatsApp</a>
+            <a href="#menu" class="btn btn-ghost">Ver el menú</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="plate">🍔</div>
+          <span class="float f1">🍟</span>
+          <span class="float f2">🥤</span>
+          <span class="float f3">🌮</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENÚ -->
+    <section id="menu" class="section">
+      <div class="container">
+        <h2 class="section-title">Nuestro menú</h2>
+        <p class="section-sub">Toca una categoría para filtrar.</p>
+        <div class="filters" role="tablist"></div>
+        <div class="menu-grid"></div>
+      </div>
+    </section>
+
+    <!-- NOSOTROS -->
+    <section id="nosotros" class="section section-alt">
+      <div class="container about">
+        <div>
+          <h2 class="section-title">Sobre nosotros</h2>
+          <p>En <strong>Edumagdonal</strong> cocinamos como en casa: recetas de familia, porciones generosas y precios justos. Cada plato se prepara al momento con ingredientes frescos de proveedores locales.</p>
+          <p>Nuestro objetivo es simple: que cada bocado te haga querer volver.</p>
+        </div>
+        <ul class="features">
+          <li><span>🥬</span><div><strong>Ingredientes frescos</strong><br>Compramos a diario.</div></li>
+          <li><span>👩‍🍳</span><div><strong>Recetas caseras</strong><br>Nada congelado ni industrial.</div></li>
+          <li><span>🛵</span><div><strong>Entrega rápida</strong><br>Llevamos tu pedido caliente.</div></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- HORARIOS Y UBICACIÓN -->
+    <section id="horarios" class="section">
+      <div class="container two-col">
+        <div class="card">
+          <h2 class="section-title">Horarios</h2>
+          <table class="hours">
+            <tr><td>Lunes a jueves</td><td>12:00 – 22:00</td></tr>
+            <tr><td>Viernes y sábado</td><td>12:00 – 23:30</td></tr>
+            <tr><td>Domingo</td><td>13:00 – 21:00</td></tr>
+          </table>
+          <p class="status js-status"></p>
+        </div>
+        <div class="card">
+          <h2 class="section-title">Dónde estamos</h2>
+          <p>📍 Calle Principal 123, Tu Ciudad</p>
+          <div class="map">
+            <iframe title="Mapa de ubicación" loading="lazy"
+              src="https://www.google.com/maps?q=Madrid&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section id="contacto" class="section section-alt">
+      <div class="container contact">
+        <h2 class="section-title">¿Hacemos tu pedido?</h2>
+        <p class="section-sub">Escríbenos y te respondemos en minutos.</p>
+        <div class="contact-links">
+          <a href="#" class="btn js-whatsapp">📲 WhatsApp</a>
+          <a href="tel:+34600000000" class="btn btn-ghost">📞 Llamar</a>
+          <a href="https://instagram.com/" target="_blank" rel="noopener" class="btn btn-ghost">📸 Instagram</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span class="js-year"></span> Edumagdonal · Hecho con 🧡</p>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a href="#" class="wa-float js-whatsapp" aria-label="Pedir por WhatsApp">💬</a>
+
+  <script src="script.js"></script>
+</body>
+</html>
